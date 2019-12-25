@@ -44,7 +44,7 @@
      "go to Home Page"]]])
 
 (defn how-fp []
-  [:h1.red-darker "functional!"])
+  [:h1.baskerville.f-headline "functional!"])
 ;; main
 
 (defn- panels [panel-name]
