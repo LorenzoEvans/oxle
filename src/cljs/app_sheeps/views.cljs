@@ -26,7 +26,7 @@
 (defn- panels [panel-name]
   (case panel-name
     :home-panel [home-page]
-    :about-panel [about-panel]
+    :about-panel [about-page]
     :posts-panel [posts-page]
     :how-fp-panel [how-fp]
     :misc-panel [misc-page]

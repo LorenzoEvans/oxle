@@ -2,8 +2,8 @@
 (ns app-sheeps.pages.about)
 
 (defn about-page []
-  (fn [] [:span.w-75.bw2.b--near-black.overflow-scroll.flex.flex-column.justify-around
-          [:h1.f2.avenir.grow.ml1.f3-m.w-75.tc.pa2 "I'm Lorenzo Evans, a developer, musician, writer, thinker and creative."
+  (fn [] [:span.w-100.bw2.b--near-black.overflow-scroll.flex.flex-column.justify-around.vh-100.bg-image-4
+          [:h1.f2.avenir.grow.ml1.f3-m.w-100.tc.pa2.near-white "I'm Lorenzo Evans, a developer, musician, writer, thinker and creative."
            [:h1.f4.avenir.hover-animate.hover-bg-dark-red.hover-navy.ml1.f3-m.pa2 "I recently finished the "
             [:span.hover-bg-dark-red.hover-animate.hover-washed-yellow [:a.f4.avenir.near-black.hover-washed-yellow {:href "https://lambdaschool.com/courses/full-stack-web-development"} "Lambda School Fullstack Web Development track."]]]
            [:div.flex.flex-row.flex-wrap.justify-center.hover-animate

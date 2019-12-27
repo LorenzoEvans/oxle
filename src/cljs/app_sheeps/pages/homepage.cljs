@@ -12,6 +12,7 @@
          [:a.h4.grow.avenir.no-underline.near-black.ba.bw2.f3.washed-green.bg-dark-gray.w4.br3.shadow-3.flex.items-center.justify-center {:href "https://twitter.com/0xLEDev"} "Twitter"]
          [:a.h4.grow.avenir.no-underline.near-black.ba.bw2.f3.washed-green.bg-dark-gray.w4.br3.shadow-3.flex.items-center.justify-center {:href "#/posts"} "Posts"]
          [:a.h4.grow.avenir.no-underline.near-black.ba.bw2.f3.washed-green.bg-dark-gray.w4.br3.shadow-3.flex.items-center.justify-center {:href "#/misc"} "Misc"]
+         [:a.h4.grow.avenir.no-underline.near-black.ba.bw2.f3.washed-green.bg-dark-gray.w4.br3.shadow-3.flex.items-center.justify-center {:href "#/about"} "About"]
          [:a.h4.grow.avenir.no-underline.near-black.ba.bw2.f3.washed-green.bg-dark-gray.w4.br3.shadow-3.flex.items-center.justify-center {:href "http://www.lorenzoevans.me/"} "Portfolio"]]
         [:div.flex.flex-column.br3.bw2.ba.b--near-black.tc.avenir.near-white.bg-near-black.f4.pa3.lh-copy.fw2.vh-50.self-center.w-75-m.shadow-3.dn-m.justify-between
          [:div.fw3.bb.bt.bw1.ma2.b--near-white. "A blog dedicated to *Functional Programming, and other niche and weird *tech things of my choosing."]

@@ -25,6 +25,20 @@
     background-size: cover;
     /* z-index: 3; */
 }
+.bg-image-4 {
+	background: url('./assets/doors.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
+}
+.bg-image-5 {
+	background: url('./assets/architecture1.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
+}
 
 /* .bg-color {
     background-color: blueviolet !important;
