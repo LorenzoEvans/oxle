@@ -5,8 +5,20 @@
 @tailwind utilities; */
 
 .bg-image {
-	background: url("../assets/bluepink.jpeg");
+	background: url('./assets/castle.jpeg');
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover;
+    background-size: cover;
+    /* z-index: 3; */
 }
+.bg-image-2 {
+	background: url('./assets/palms.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
+}
+
+/* .bg-color {
+    background-color: blueviolet !important;
+} */
