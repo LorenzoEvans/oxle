@@ -9,7 +9,7 @@
                          :panel-name :how-fp
                          :full-article [how-fp]}
                :hoon-week-1 {:title "Hoon School: Week One" :prev "What the f#&% is thi-...oh my god it's amazing."
-                             :url "#/hoon-school-week-one"
+                             :url "#/hoon-school-week-1"
                              :panel-name :hoon-week-1
                              :full-article [hoon-school-week-1]}
                :lambda-labs-gql-1 {:title "Lambda Labs & GraphQL, Part I"

@@ -11,19 +11,6 @@
 
 
 ;; home
-
-; (defn home-panel []
-;   (let [name (re-frame/subscribe [::subs/name])]
-;     [:div
-;      [:h1 (str "0xle :: Blog")]
-
-;      [:div
-;       [:a {:href "#/about"}
-;        "go to About Page"]
-;       [:a {:href "#/how-fp"} "how fp"]]
-;      ]))
-
-
 ;; about
 
 (defn about-panel []
@@ -42,7 +29,8 @@
     :about-panel [about-panel]
     :posts-panel [posts-page]
     :how-fp-panel [how-fp]
-    :hoon-school-week-1 [hoon-school-week-1]
+    :misc-panel [misc-page]
+    :hoon-school-week-1-panel [hoon-school-week-1]
     [:div]))
 
 (defn show-panel [panel-name]

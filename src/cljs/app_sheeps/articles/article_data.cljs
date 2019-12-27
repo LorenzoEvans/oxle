@@ -5,8 +5,9 @@
 
 (defn in-progress []
   [:div.f-subheadline.avenir.fw5.tc.hover-bg-light-gray.hover-dark-pink.pa2.grow.ba.b--purple.bw2.br2 "Article :: In progress..."])
+
 (defn how-fp []
-[:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center.bg-image
+[:p.avenir.flex.flex-column.justify-around.vh-100
  [:section.flex.flex-column.h-75
   [:p.f3.fw6.navy.bb.bw2 "Q: Why would a student taking Lambda's Web Development course stay up extra late after class to read about Haskell?"]
   [:p.lh-title.f3.fw6.silver "A: Well, let's dig in."]
@@ -29,8 +30,7 @@
    [:p.lh-copy.near-black " The former will no longer suffice. "]
    [:p.lh-copy.near-black "The number of hours lost that would have been saved if I had've been able to express to my compiler the nature, the type I expected a function to be working with, and what order, at every stage of it's execution are too great, to many. I was staying here. I would be a Haskeller. I felt at home."]
    [:p.lh-copy.near-black "What I didn't realize, at the time, was that I was actually taking an extended stay at a hotel during a layover."]
-   [:p.lh-copy.near-black "I was yet to reach my actual destination."]
-   ]]])
+   [:p.lh-copy.near-black "I was yet to reach my actual destination."]]]])
 
 (defn hoon-school-week-1
   []

@@ -18,6 +18,13 @@
     background-size: cover;
     /* z-index: 3; */
 }
+.bg-image-3 {
+	background: url('./assets/bluepink.jpeg');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    /* z-index: 3; */
+}
 
 /* .bg-color {
     background-color: blueviolet !important;
