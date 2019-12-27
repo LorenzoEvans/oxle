@@ -28,8 +28,8 @@
   (defroute "/about" []
     (re-frame/dispatch [::events/set-active-panel :about-panel]))
 
-  (defroute "/how-fp" []
-    (re-frame/dispatch [::events/set-active-panel :how-fp-panel]))
+  (defroute "/posts" []
+    (re-frame/dispatch [::events/set-active-panel :posts-panel]))
 
 
   ;; --------------------
