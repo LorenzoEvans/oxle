@@ -5,5 +5,8 @@
 @tailwind utilities; */
 
 .bg-image {
-    background-image: url();
+	background: url("../assets/bluepink.jpeg");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
 }
