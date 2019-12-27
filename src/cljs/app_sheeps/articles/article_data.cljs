@@ -5,7 +5,7 @@
 
 (defn in-progress []
   [:div.f-subheadline.avenir.fw5.tc.hover-bg-light-gray.hover-dark-pink.pa2.grow.ba.b--purple.bw2.br2 "Article :: In progress..."])
-(defn how-fp-data []
+(defn how-fp []
 [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
  [:section.flex.flex-column.h-75
   [:p.f3.fw6.navy.bb.bw2 "Q: Why would a student taking Lambda's Web Development course stay up extra late after class to read about Haskell?"]
