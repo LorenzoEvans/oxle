@@ -1,4 +1,6 @@
-(ns app-sheeps.articles.article-data)
+(ns app-sheeps.articles.article-data
+  (:require [app-sheeps.pages.homepage :refer [github-anchor twitter-anchor about-anchor
+                                              portfolio-anchor posts-anchor misc-anchor]]))
 
 (defn labs-article-data []
   [:div "hi"])
@@ -8,10 +10,16 @@
 
 (defn how-fp []
 [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
- [:section.flex.flex-column.h-75
-  [:p.f3.fw6.navy.bb.bw2 "How I ended"]
-  [:p.lh-title.f3.fw6.silver "A: Well, let's dig in."]
-  [:p.lh-title.f4.fw6.silver "Once upon a time..."]
+ [:section.flex.flex-row.justify-between.w-75
+ [posts-anchor]
+ [portfolio-anchor]
+ [github-anchor]
+ [twitter-anchor]
+ [about-anchor]
+ [misc-anchor]]
+ [:section.flex.flex-column.h-75.w-75
+
+  [:p.f3.fw6.navy.bb.bw2 "How I Became a Functional Programmer"]
   [:div.lh-solid 
    [:p.lh-copy.near-black "I was working through DOM manipulation at Lambda, getting elements by Id, writing markdown parsers in code challenges, and constantly forgetting to initialize my iterator variable, undergoing the general struggles of learning JavaScript."]
    [:p.lh-copy.near-black "To be quite honest, I'd developed (pun intended) a bit of rancor towards the language, one that was perhaps stoked by the spectre of the industry, Imposter Syndrome, and the long standing Dunning-Kruger effect."]
@@ -22,10 +30,10 @@
    [:blockquote.f1.bg-animate.hover-animate.hover-bg-washed-red.hover-purple.pa1.dark-gray "main :: IO ()"]
    [:p.lh-copy.near-black "There was more, but something about that line of code seduced me, and I immediately had to find out what it was. As you've probably guessed by now, it was Haskell, a strictly typed, purely functional language."] 
    [:p.lh-copy.near-black "It was love at first sight. I started learning me a Haskell for great good. I was intoxicated. I could not believe how useful list comprehensions were, they just seemed like such an ingenius way to work on data, I enjoyed guards as conditional clauses, but there was something else that really seaked my resolve to become a functional programmer."]
-   [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-75.tc.tracked-mega "T Y P E S I G N A T U R E S"]
-   [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-75.tc "inc :: Num a => a -> a"
-    [:hr.w-75.bb.bw2.b--navy]
-    [:div.fw1 "(inc is of type Num a, meaning it can accept any value so long as it is of the Num typeclass, it expects one of those values, and will return one. )"]]
+   [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.tracked-mega "T Y P E S I G N A T U R E S"]
+   [:blockquote.f3.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc "inc :: Num a => a -> a"
+    [:hr.w-50.bb.bw2.b--navy]
+    [:div.fw1 "(inc is of type Num a, meaning it can accept any value so long as it is of the Num typeclass, as it expects one of those values, and will also return one. )"]]
    [:p.lh-copy.near-black "Wha- what do you mean, 'go back'?"] 
    [:p.lh-copy.near-black " The former will no longer suffice. "]
    [:p.lh-copy.near-black "The number of hours lost that would have been saved if I had've been able to express to my compiler the nature, the type I expected a function to be working with, and what order, at every stage of it's execution are too great, to many. I was staying here. I would be a Haskeller. I felt at home."]
