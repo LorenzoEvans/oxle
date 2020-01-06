@@ -5,8 +5,8 @@
 (defn new-string [x]
     (clojure.string/replace x "." " "))
 
-(def link-styling-home (new-string "h3.pa1.grow.bw1.w-90.f3.near-white.bg-near-black.w4.w-75-m.br1.ba.b--near-white.shadow-3.flex.items-center.justify-center"))
-(def link-styling-x (new-string "h3.grow.no-underline.near-black.ba.bw1.f3.near-black.bg-near-white.w4.w-75-m.br1.shadow-3.flex.items-center.justify-center"))
+(def link-styling-home (new-string "h3.pa1.grow.bw1.w-90.f3.near-black.bg-near-white.w4.w-75-m.hover-bg-dark-gray.bb.bw3.br1.hover-washed-green.b--near-black.shadow-3.flex.items-center.justify-center"))
+(def link-styling-x (new-string "h3.pa1.grow.bw1.w-40.ma1.f3.near-black.bg-near-white.w4.w-75-m.hover-bg-dark-gray.bb.bw3.br1.hover-washed-green.b--near-black.shadow-3.flex.items-center.justify-center"))
 
 (defn github-anchor [] [:a.w-90.mono-gf {:class link-styling-home :href "https://github.com/LorenzoEvans"} "Github"])
 (defn twitter-anchor [] [:a.w-90.mono-gf {:class link-styling-home :href "https://twitter.com/0xLEDev"} "Twitter"])
@@ -35,12 +35,16 @@
   
 (defn home-page []
   (fn []
-    [:div.flex.flex-row.flex-between.flex-column-m.justify-around-m.b--near-black.bw2.bg-near-black.vh-100.mono-gf
-     [:nav.w-30.items-center.flex.flex-column.justify-around.self-center.mt2.mb2.flex-column-m.justify-between-m.h-100-m.ma2.vh-100
+    [:div.flex.flex-row.flex-column-m.justify-around-m.b--near-black.bw2.bg-near-black.vh-100.mono-gf.bg-image.items-center
+     [:nav.w-30.items-center.flex.flex-column.justify-around.self-center.mt2.mb2.flex-column-m.justify-between-m.h-100-m.ma2.vh-75
       [posts-anchor]
       [portfolio-anchor]
       [github-anchor]
       [twitter-anchor]
       [about-anchor]
       [misc-anchor]]
-     [:div#p-gram.w-100.tracked-mega.h3-m.bg-near-white.flex.flex-column.content-center.mt2 [:span#n-skew.m-sub.f-headline.tracked-mega.f2-m.fw1.b "Maybe"] [:span#n-skew.m-sub.f-headline.tracked-mega.f2-m "Sheeps"]]]))
+     [:div#p-gram.w-100.bg-image-6.tracked-mega.h3-m.bg-near-black.flex.flex-column.content-center.mt4
+      [:span#n-skew.m-sub.f1.tracked-mega.f2-m.fw1.self-center.near-white.bb.bw1.b--moon-gray.light-purple "S[y]nths"] 
+      [:span#n-skew.m-sub.f2.tracked-mega.f2-m.fw1.b.self-center.near-white.bb.bw1.b--light-blue.washed-red "for"] 
+      [:span#n-skew.m-sub.f1.tracked-mega.f2-m.fw1.b.self-center.near-white.bb.bw1.b--light-pink.light-green "Compilers"]]]))
+      

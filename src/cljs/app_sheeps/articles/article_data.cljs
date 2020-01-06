@@ -1,17 +1,22 @@
 (ns app-sheeps.articles.article-data
-  (:require [app-sheeps.pages.homepage :refer [github-anchor twitter-anchor about-anchor
-                                              portfolio-anchor posts-anchor misc-anchor]]
-            [app-sheeps.pages.homepage :refer [link-styling-x]]))
+  (:require [app-sheeps.pages.homepage :refer [link-styling-x]]))
 
 (defn labs-article-data []
   [:div "hi"])
+
+(defn github-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "https://github.com/LorenzoEvans"} "Github"])
+(defn twitter-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "https://twitter.com/0xLEDev"} "Twitter"])
+(defn posts-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "#/posts"} "Posts"])
+(defn misc-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "#/misc"} "Misc"])
+(defn about-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "#/about"} "About"])
+(defn portfolio-anchor [] [:a.w-90.mono-gf {:class link-styling-x :href "http://www.lorenzoevans.me/"} "Portfolio"])
 
 (defn in-progress []
   [:div.f-subheadline.avenir.fw5.tc.hover-bg-light-gray.hover-dark-pink.pa2.grow.ba.b--purple.bw2.br2 "Article :: In progress..."])
 
 (defn how-fp []
 [:p.avenir.flex.flex-column.pa4.justify-around.content-center.items-center.self-center
- [:section.flex.flex-row.justify-between.w-75
+ [:section.flex.flex-row.justify-between.w-100
  [posts-anchor]
  [portfolio-anchor]
  [github-anchor]
@@ -43,9 +48,11 @@
    [:p.lh-copy.near-black "The number of hours lost that would have been saved if I had've been able to express to my compiler the nature, the type I expected a function to be working with, and what order, at every stage of it's execution are too great, to many. There was freedom in this strictness. I was free to define as strictly as I pleased, or as loosely I as pleased, the aforementioned criteria of a function. It was then that I resolved to become a Haskeller, and began studying the language, and all things functional programming, and quickly, two things happened: I realized I had fallen into a rabbit-hole, and that there were things way, way stranger than JavaScript that awaited me on this path."]
    [:p.lh-copy.near-black "What I didn't realize, at the time, was that my stay at Hotel Haskell, was going to be much shorter than I intended it to be."]
    [:div.lh-copy.near-black "I was yet to reach my actual destination."]
-   [:p.lh-copy.near-black "Where was the next stop?"]
-   [:p "Check out the next post in my series How FP:"]
-   [:a.w-40.mt2 {:class link-styling-x :href "/#how-lisp"} "How I Ended Up Writing Lisp"]]]])
+   [:div.lh-copy.near-black "Where was the next stop?"]
+   [:blockquote.f2.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.flex.justify-around "Check out the next post:"
+    [:a.w-40.bb.bw3 {:class link-styling-x :href "#/how-lisp"} "How I Ended Up Writing Lisp"]]]]
+   [:div.w-100.bt.bw2.b--black.flex.justify-center
+    [:a.mv3 {:class link-styling-x :href "/posts"} "Back to posts."]]])
 
 (defn how-lisp []
   )
