@@ -43,3 +43,24 @@
 /* .bg-color {
     background-color: blueviolet !important;
 } */
+
+a.mono-gf {
+  font-family: 'Major Mono Display';
+}
+
+span.m-sub {
+  font-family: 'Montserrat Subrayada';
+}
+
+#p-gram {
+  margin: 0 auto;
+  width: 650px;
+  height: 400px;
+  justify-content: center;
+  transform: skew(10deg);
+  background: rgb(184, 172, 172);
+}
+
+span#n-skew {
+  transform: skew(-20deg);
+}

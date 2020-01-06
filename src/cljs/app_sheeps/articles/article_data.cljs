@@ -1,7 +1,7 @@
 (ns app-sheeps.articles.article-data
   (:require [app-sheeps.pages.homepage :refer [github-anchor twitter-anchor about-anchor
                                               portfolio-anchor posts-anchor misc-anchor]]
-            [app-sheeps.pages.homepage :refer [link-styling]]))
+            [app-sheeps.pages.homepage :refer [link-styling-x]]))
 
 (defn labs-article-data []
   [:div "hi"])
@@ -45,7 +45,7 @@
    [:div.lh-copy.near-black "I was yet to reach my actual destination."]
    [:p.lh-copy.near-black "Where was the next stop?"]
    [:p "Check out the next post in my series How FP:"]
-   [:a.w-40.mt2 {:class link-styling :href "/#how-lisp"} "How I Ended Up Writing Lisp"]]]])
+   [:a.w-40.mt2 {:class link-styling-x :href "/#how-lisp"} "How I Ended Up Writing Lisp"]]]])
 
 (defn how-lisp []
   )
