@@ -67,5 +67,5 @@
          [:li.lh-copy.near-black "We were also encouraged to boot a "]
          [:span.bb.bw1.b--near-black.no-underline [:a.link.dim.navy.bb.b--near-gray.no-underline {:href "https://urbit.org/using/develop/"} "Fakezod."]]]
         [:p.lh-copy.near-black "There were instructional videos from staff, walk throughs in the documentation, which made the homework assignment relatively easy, but it still felt like an achievement, luckily I'm used to diving into new technologies head first. I'm chomping at the bit to get next weeks assignment, and learn more about the Urbit stack."]
-        [:p.lh-copy.bg-washed-green.dark-gray.fw4.f3 "If you have an urbit, send me some mail at ~bilnub-bollyx/descent-bilnub."]]]]]))
+        [:p.lh-copy.bg-washed-green.dark-gray.fw4.f3 "If you have an urbit, send me a message at ~bilnub-bollyx."]]]]]))
        

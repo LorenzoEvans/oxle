@@ -5,7 +5,7 @@
 (defn new-string [x]
     (clojure.string/replace x "." " "))
 
-(def link-styling (new-string "h3.grow.avenir.no-underline.near-black.ba.bw2.f3.washed-green.bg-dark-gray.w4.br3.shadow-3.flex.items-center.justify-center"))
+(def link-styling (new-string "h3.grow.avenir.no-underline.near-black.ba.bw1.f3.near-black.bg-near-white.w4.w-75-m.br1.shadow-3.flex.items-center.justify-center"))
 
 (defn github-anchor [] [:a {:class link-styling :href "https://github.com/LorenzoEvans"} "Github"])
 (defn twitter-anchor [] [:a {:class link-styling :href "https://twitter.com/0xLEDev"} "Twitter"])
@@ -18,7 +18,7 @@
       (fn []
        [:div.flex.flex-column.justify-around.flex-column-m.justify-around-m.b--near-black.bw2.bg-image.vh-100
         [:h1.flex.flex-column.justify-center.w-100.w-90-m.flex-column-m.bw2.avenir.dark-gray.f1.ba.b--near-black.bw1.shadow-3.f2-m.tc.self-center 
-         [:div.w-100.flex.flex-row.justify-between.tracked-mega [:span.f-subheadline.tracked-mega "Maybe"] [:span.f-subheadline.tracked-mega "Sheeps"]]]
+         [:div.w-100.flex.flex-row.justify-between.tracked-mega.h3-m [:span.f-subheadline.tracked-mega.f2-m "Maybe"] [:span.f-subheadline.tracked-mega.f2-m "Sheeps"]]]
         [:nav.w-100.items-center.flex.flex-row.justify-around.self-center.mt2.mb2.flex-column-m.justify-between-m.h-100-m
          [posts-anchor]
          [portfolio-anchor]
