@@ -1,6 +1,7 @@
 (ns app-sheeps.articles.article-data
   (:require [app-sheeps.pages.homepage :refer [github-anchor twitter-anchor about-anchor
-                                              portfolio-anchor posts-anchor misc-anchor]]))
+                                              portfolio-anchor posts-anchor misc-anchor]]
+            [app-sheeps.pages.homepage :refer [link-styling]]))
 
 (defn labs-article-data []
   [:div "hi"])
@@ -41,7 +42,13 @@
     [:div.fw1 "(inc is of type Num a, meaning it can accept any value so long as it is of the Num typeclass, as it expects one of those values, and will also return one. )"]]
    [:p.lh-copy.near-black "The number of hours lost that would have been saved if I had've been able to express to my compiler the nature, the type I expected a function to be working with, and what order, at every stage of it's execution are too great, to many. There was freedom in this strictness. I was free to define as strictly as I pleased, or as loosely I as pleased, the aforementioned criteria of a function. It was then that I resolved to become a Haskeller, and began studying the language, and all things functional programming, and quickly, two things happened: I realized I had fallen into a rabbit-hole, and that there were things way, way stranger than JavaScript that awaited me on this path."]
    [:p.lh-copy.near-black "What I didn't realize, at the time, was that my stay at Hotel Haskell, was going to be much shorter than I intended it to be."]
-   [:p.lh-copy.near-black "I was yet to reach my actual destination."]]]])
+   [:div.lh-copy.near-black "I was yet to reach my actual destination."]
+   [:p.lh-copy.near-black "Where was the next stop?"]
+   [:p "Check out the next post in my series How FP:"]
+   [:a.w-40.mt2 {:class link-styling :href "/#how-lisp"} "How I Ended Up Writing Lisp"]]]])
+
+(defn how-lisp []
+  )
 
 (defn hoon-school-week-1
   []
