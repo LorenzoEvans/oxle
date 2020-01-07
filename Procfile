@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/app-sheeps.jar clojure.main -m app-sheeps.core
