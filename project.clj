@@ -57,4 +57,5 @@
 
    :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}
    
-   :uberjar {:aot :all} })
+   :uberjar {:dependencies []
+             :aot :all} })
