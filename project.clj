@@ -1,4 +1,4 @@
-(defproject app-sheeps
+(defproject app-sheeps "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.597"
                   :exclusions [com.google.javascript/closure-compiler-unshaded
@@ -16,6 +16,8 @@
             [lein-shell "0.5.0"]]
 
   :min-lein-version "2.5.3"
+  
+  :main app-sheeps.core
 
   :source-paths ["src/clj" "src/cljs"]
 
@@ -50,14 +52,11 @@
                             ["shell" "karma" "start" "--single-run" "--reporters" "junit,dots"]]}
 
   :profiles
-  {:dev {:dependencies [[binaryage/devtools "0.9.11"]
-                        [day8.re-frame/re-frame-10x "0.4.4"]
-                        [day8.re-frame/tracing "0.5.3"]]}
+  {:dev
+   {:dependencies [[binaryage/devtools "0.9.11"]
+                   [day8.re-frame/re-frame-10x "0.4.4"]
+                   [day8.re-frame/tracing "0.5.3"]]}
 
    :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}
    
-   :uberjar {:main app-sheeps.core
-             :aot :all
-             :dependencies [[day8.re-frame/tracing "0.5.3"]
-                            [binaryage/devtools "0.9.11"]
-                            [day8.re-frame/re-frame-10x "0.4.4"]]}})
+   :uberjar {:aot :all} })
