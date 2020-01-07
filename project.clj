@@ -16,6 +16,7 @@
             [lein-shell "0.5.0"]]
 
   :min-lein-version "2.5.3"
+  :main app-sheeps.core
 
   :source-paths ["src/clj" "src/cljs"]
 
