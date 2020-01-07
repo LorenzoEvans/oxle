@@ -7,8 +7,8 @@
    [app-sheeps.views :as views]
    [app-sheeps.articles.article-content]
    [app-sheeps.articles.article-data]
-   [app-sheeps.config :as config]
-   (:gen-class)))
+   [app-sheeps.config :as config])
+  (:gen-class))
 
 
 (defn dev-setup []
