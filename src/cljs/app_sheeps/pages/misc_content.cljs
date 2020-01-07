@@ -20,4 +20,4 @@
                  {:title "Max Cooper"
                   :link "www.google" 
                   :tags #{"music" "art" "algo-art" "digi-art"}
-                  :bg "light-gray"}])
+                  :bg "bg-light-gray"}])
