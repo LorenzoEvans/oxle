@@ -3,16 +3,15 @@
 (def misc-items [{:title "Left"
                   :link "www.google" 
                   :tags #{"application" "minimalist"}
-                  :bg "bg-washed-red"}
-                  
+                  :bg "c1"}
                  {:title "Urbit"
                   :link "www.google" 
                   :tags #{"application" "minimalist" "dec/dist"}
-                  :bg "bg-washed-green"}
+                  :bg "c2"}
                  {:title "Are.na"
                   :link "www.google" 
                   :tags #{"site" "minimalist"}
-                  :bg "bg-washed-yellow"}
+                  :bg "c3"}
                  {:title "Lietal"
                   :link "www.google" 
                   :tags #{"language"}

@@ -97,3 +97,36 @@ span#n-skew {
 .opac-text {
   opacity: 0.2 !important;
 }
+
+.constrain-height {
+  height: auto;
+  width:  auto;
+}
+
+.c1 {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.c2 {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.c3 {
+  background-image: linear-gradient(to top, #dcd3df 0%, #d9ded8 100%);
+}
+.c4 {
+  background:  #84FFFF ;
+}
+.c5 {
+  background:  #90A4AE ;
+}
+.c6 {
+  background: #757575 ;
+}
+.c7 {
+  background:  #A5D6A7 ;
+}
+.c1 {
+  background:  ;
+}
+.c1 {
+  background:  ;
+}
