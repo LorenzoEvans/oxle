@@ -20,7 +20,7 @@
   (reagent/render [views/main-panel]
                   (.getElementById js/document "app")))
 
-(defn init []
+(defn -main []
   (routes/app-routes)
   (re-frame/dispatch-sync [::events/initialize-db])
   (dev-setup)

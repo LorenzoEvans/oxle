@@ -56,4 +56,6 @@
                    [day8.re-frame/tracing "0.5.3"]]}
 
    :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}
+   
+   :uberjar {:main app-sheeps.core}
    })
