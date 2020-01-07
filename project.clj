@@ -34,8 +34,6 @@
   :shell {:commands {"open" {:windows ["cmd" "/c" "start"]
                              :macosx  "open"
                              :linux   "xdg-open"}}}
-  :main app-sheeps.core
-
   :aliases {"dev"          ["with-profile" "dev" "do"
                             ["clean"]
                             ["run" "-m" "shadow.cljs.devtools.cli" "watch" "app"]]
