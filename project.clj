@@ -57,5 +57,9 @@
 
    :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}
    
-   :uberjar {:dependencies []
-             :aot :all} })
+   :uberjar {:source-paths ["env/prod/clj"]
+             :omit-source  true
+             :main         app-sheeps.core
+             :aot          :all
+             :uberjar-name "app-sheeps-0.1.0-SNAPSHOT.jar"
+             :prep-tasks   ["compile" ["prod"]]})
