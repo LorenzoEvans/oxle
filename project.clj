@@ -62,4 +62,4 @@
              :main         app-sheeps.core
              :aot          :all
              :uberjar-name "app-sheeps-0.1.0-SNAPSHOT.jar"
-             :prep-tasks   ["compile" ["prod"]]})
+             :prep-tasks   ["compile" ["prod"]]}})
