@@ -1,5 +1,13 @@
-(ns app-sheeps.pages.misc)
+(ns app-sheeps.pages.misc
+  (:require [app-sheeps.pages.misc-content :refer [misc-items]]))
 
 (defn misc-page []
-    [:div.vh-100.bg-image-3 
-     [:span.f-headline.avenir.washed-blue.near-black.hover-near-black.fw4 "I solemnly swear that I am up to no good."]])
+    [:div.vh-100.flex.flex-row.flex-wrap.
+     (for [item misc-items]
+      [:div.ba.bw1.h-25.w-auto.ma1
+       [:section.f2.avenir (item :title)]
+       [:section (item :type)]
+       [:section [:a {:href (item :link)} (item :title)]]
+       [:div "Tags"
+        (for [tag (:tags item)]
+          [:section [:span.ma1 tag]])]])])

@@ -12,6 +12,7 @@
 (defn twitter-anchor [] [:a.w-90.mono-gf {:class link-styling-home :href "https://twitter.com/0xLEDev"} "Twitter"])
 (defn posts-anchor [] [:a.w-90.mono-gf {:class link-styling-home :href "#/posts"} "Posts"])
 (defn misc-anchor [] [:a.w-90.mono-gf {:class link-styling-home :href "#/misc"} "Misc"])
+(defn arena-anchor [] [:a.w-90.mono-gf {:class link-styling-home :href "https://www.are.na/bilnub-bollyx"} "Are.na"])
 (defn about-anchor [] [:a.w-90.mono-gf {:class link-styling-home :href "#/about"} "About"])
 (defn portfolio-anchor [] [:a.w-90.mono-gf {:class link-styling-home :href "http://www.lorenzoevans.me/"} "Portfolio"])
 
@@ -42,9 +43,9 @@
       [github-anchor]
       [twitter-anchor]
       [about-anchor]
-      [misc-anchor]]
+      [misc-anchor]
+      [arena-anchor]]
      [:div#p-gram.w-100.bg-image-6.tracked-mega.h3-m.bg-near-black.flex.flex-column.content-center.mt4
       [:span#n-skew.m-sub.f1.tracked-mega.f2-m.fw1.self-center.near-white.bb.bw1.b--moon-gray.light-purple "S[y]nths"] 
       [:span#n-skew.m-sub.f2.tracked-mega.f2-m.fw1.b.self-center.near-white.bb.bw1.b--light-blue.washed-red "for"] 
       [:span#n-skew.m-sub.f1.tracked-mega.f2-m.fw1.b.self-center.near-white.bb.bw1.b--light-pink.light-green "Compilers"]]]))
-      

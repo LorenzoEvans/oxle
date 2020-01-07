@@ -52,7 +52,7 @@
    [:blockquote.f2.bg-animate.hover-animate.hover-bg-washed-green.hover-purple.pa1.dark-gray.grow.animate.fw5.grow.bl.br.bw2.b--near-black.w-100.tc.flex.justify-around "Check out the next post:"
     [:a.w-40.bb.bw3 {:class link-styling-x :href "#/how-lisp"} "How I Ended Up Writing Lisp"]]]]
    [:div.w-100.bt.bw2.b--black.flex.justify-center
-    [:a.mv3 {:class link-styling-x :href "/posts"} "Back to posts."]]])
+    [:a.mv3 {:class link-styling-x :href "#/posts"} "Back to posts."]]])
 
 (defn how-lisp []
   )
