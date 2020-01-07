@@ -16,7 +16,6 @@
             [lein-shell "0.5.0"]]
 
   :min-lein-version "2.5.3"
-  :main app-sheeps.core
 
   :source-paths ["src/clj" "src/cljs"]
 
@@ -33,6 +32,7 @@
   :shell {:commands {"open" {:windows ["cmd" "/c" "start"]
                              :macosx  "open"
                              :linux   "xdg-open"}}}
+  :main app-sheeps.core
 
   :aliases {"dev"          ["with-profile" "dev" "do"
                             ["clean"]
